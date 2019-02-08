@@ -21,7 +21,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left|center_vertical"
-            android:hint="ID는 수정할 수 없습니다"
             android:id="@+id/edtID2"
             android:paddingLeft="5dp"
             android:enabled="false"/>

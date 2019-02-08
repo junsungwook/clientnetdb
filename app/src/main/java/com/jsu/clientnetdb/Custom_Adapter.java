@@ -77,10 +77,18 @@ public class Custom_Adapter extends BaseAdapter {
             @Override
             public void onClick(View view) {
                 final View v = mAct.getLayoutInflater().inflate(R.layout.dialog_update,null);
+                EditText e1 = (EditText)v.findViewById(R.id.edtID2);
+                EditText e2 = v.findViewById(R.id.edtNAME);
+                EditText e3 = v.findViewById(R.id.edtPhone);
+                EditText e4 = v.findViewById(R.id.edtGrade);
+                e1.setText(tvID.getText().toString());
+                e2.setText(tvName.getText().toString());
+                e3.setText(tvPhone.getText().toString());
+                e4.setText(tvGrade.getText().toString());
+
                 new android.support.v7.app.AlertDialog.Builder(mAct)
                     .setTitle("멤버 수정")
                     .setView(v)
-
                     .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
