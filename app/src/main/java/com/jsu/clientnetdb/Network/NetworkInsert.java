@@ -20,7 +20,7 @@ import java.net.URL;
 public class NetworkInsert extends AsyncTask<String,Void,String> {
 
     private URL Url;
-    private String URL_Adress = "http://192.168.0.32:8888/TestDB/insertDB.jsp";
+    private String URL_Adress = "http://192.168.0.15:8888/TestDB/insertDB.jsp";
     private Custom_Adapter adapter;
 
     public NetworkInsert(Custom_Adapter adapter){

@@ -16,12 +16,12 @@ import java.io.PrintWriter;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
+
 
 public class NetworkDelete extends AsyncTask<String,Void,String> {
 
     private URL Url;
-    private String URL_Adress = "http://192.168.0.32:8888/TestDB/deleteDB.jsp";
+    private String URL_Adress = "http://192.168.0.15:8888/TestDB/deleteDB.jsp";
     private Custom_Adapter adapter;
 
     public NetworkDelete(Custom_Adapter adapter){

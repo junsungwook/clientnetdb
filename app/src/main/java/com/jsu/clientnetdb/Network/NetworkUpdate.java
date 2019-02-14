@@ -1,7 +1,6 @@
 package com.jsu.clientnetdb.Network;
 
 import android.os.AsyncTask;
-import android.util.Log;
 
 import com.jsu.clientnetdb.Custom_Adapter;
 
@@ -18,7 +17,7 @@ import java.net.URL;
 
 public class NetworkUpdate extends AsyncTask<String,Void,String> {
     private URL Url;
-    private String URL_Adress = "http://192.168.0.32:8888/TestDB/updateDB.jsp";
+    private String URL_Adress = "http://192.168.0.15:8888/TestDB/updateDB.jsp";
     private Custom_Adapter adapter;
 
     public NetworkUpdate(Custom_Adapter adapter){

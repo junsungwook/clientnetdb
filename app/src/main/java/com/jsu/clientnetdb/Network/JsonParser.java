@@ -21,30 +21,30 @@ public class JsonParser {
 
         for (int i=0; i<jsonArray.length();i++){
             JSONObject jsonObj = (JSONObject)jsonArray.get(i);
-            if(jsonObj.getString("ID").toString().equals("null"))
+            if(jsonObj.getString("ID").equals("null"))
                 strID="-";
             else
-                strID=jsonObj.getString("ID").toString();
+                strID=jsonObj.getString("ID");
 
-            if(jsonObj.getString("NAME").toString().equals("null"))
+            if(jsonObj.getString("NAME").equals("null"))
                 strName="-";
             else
-                strName=jsonObj.getString("NAME").toString();
+                strName=jsonObj.getString("NAME");
 
-            if(jsonObj.getString("PHONE").toString().equals("null"))
+            if(jsonObj.getString("PHONE").equals("null"))
                 strPhone="-";
             else
-                strPhone=jsonObj.getString("PHONE").toString();
+                strPhone=jsonObj.getString("PHONE");
 
-            if(jsonObj.getString("GRADE").toString().equals("null"))
+            if(jsonObj.getString("GRADE").equals("null"))
                 strGrade="-";
             else
-                strGrade=jsonObj.getString("GRADE").toString();
+                strGrade=jsonObj.getString("GRADE");
 
-            if(jsonObj.getString("WRITE_TIME").toString().equals("null"))
+            if(jsonObj.getString("WRITE_TIME").equals("null"))
                 strWriteTime="-";
             else {
-                strWriteTime = jsonObj.getString("WRITE_TIME").toString();
+                strWriteTime = jsonObj.getString("WRITE_TIME");
                 String temp[] = strWriteTime.split(" ");
                 strWriteTime = temp[0] + "\n" + temp[1];
             }

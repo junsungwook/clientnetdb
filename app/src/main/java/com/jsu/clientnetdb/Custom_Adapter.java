@@ -14,7 +14,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.jsu.clientnetdb.Network.NetworkDelete;
-import com.jsu.clientnetdb.Network.NetworkInsert;
 import com.jsu.clientnetdb.Network.NetworkUpdate;
 
 import java.util.ArrayList;
@@ -25,7 +24,6 @@ public class Custom_Adapter extends BaseAdapter {
     LayoutInflater mInflater;
     ArrayList<UserInfo> mUserInfoObjArr;
     int mListLayout;
-    private Custom_Adapter adapter;
 
     public Custom_Adapter(Activity a, int listLayout, ArrayList<UserInfo> userInfoObjArrayListT){
         mAct = a;
@@ -77,7 +75,7 @@ public class Custom_Adapter extends BaseAdapter {
             @Override
             public void onClick(View view) {
                 final View v = mAct.getLayoutInflater().inflate(R.layout.dialog_update,null);
-                EditText e1 = (EditText)v.findViewById(R.id.edtID2);
+                EditText e1 = v.findViewById(R.id.edtID2);
                 EditText e2 = v.findViewById(R.id.edtNAME);
                 EditText e3 = v.findViewById(R.id.edtPhone);
                 EditText e4 = v.findViewById(R.id.edtGrade);
